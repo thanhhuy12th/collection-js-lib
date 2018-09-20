@@ -16,20 +16,19 @@ Must use by step: counterup.js -> waypoints.js (To handle scroll event)
 ## Easing
 Using to make smooth scrolling
 ```
-$('.scroll-top, #logo a').click(function(){
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000, 'easeInOutExpo');
-    return false;
-  });
+<script src="lib/easing/easing.js"></script>
+<script>
+    $('.scroll-top, #logo a').click(function(){
+        $("html, body").animate({
+          scrollTop: 0
+        }, 1000, 'easeInOutExpo');
+        return false;
+    });
+</script>
 ```
 ## SuperFish menu custom
 Using to create smart menu (navigator). Add mobile style
 ```
-<!-- Include script -->
-<script src="lib/fish-menu/js/hoverIntent.js"></script>
-<script src="lib/fish-menu/js/superfish.js"></script>
-<script src="lib/fish-menu/js/main.js"></script>
 <!-- HTML code -->
 <nav id="nav-menu-container" class="pull-left">
     <ul class="nav-menu">
@@ -59,13 +58,26 @@ Using to create smart menu (navigator). Add mobile style
         <li><a href="#contact">contact us</a></li>
     </ul>
 </nav>
+<!-- Include script -->
+<script src="lib/fish-menu/js/hoverIntent.js"></script>
+<script src="lib/fish-menu/js/superfish.js"></script>
+<script src="lib/fish-menu/js/main.js"></script>
 ```
 ## Parallax
 Using to create amazing background. Must include by step: 1. stellar.js -> 2. paralax.js
 ```
+<!-- HTML code -->
+<div class="parallax text-center" id="parallax" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.2}' data-toggle="parallax-bg"> </div>
 <!-- Include lib -->
 <script src="lib/parallax/stellar.min.js"></script>
 <script src="lib/parallax/parallax.js"></script>
-<!-- HTML code -->
-<div class="parallax text-center" id="parallax" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.2}' data-toggle="parallax-bg"> </div>
+```
+## Sticky
+Using to stick an element as fixed
+```
+<!-- Sticky something -->
+<script src="lib/stickyjs/sticky.js"></script>
+<script>
+    $("#header").sticky({topSpacing:0, zIndex: '50'});
+</script>
 ```
