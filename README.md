@@ -81,3 +81,17 @@ Using to stick an element as fixed
     $("#header").sticky({topSpacing:0, zIndex: '50'});
 </script>
 ```
+## Animated
+Using to animate an element. Combine with WOW js to make everything easier. See more animation at: https://daneden.github.io/animate.css
+```
+<html lang="en">
+    <head>
+    ...
+    <link rel="stylesheet" type="text/css" href="lib/animated/animate.css">
+    </head>
+    <body>
+        <h1 class="wow fadeIn">Amazing text</h1>
+        <script src="lib/animated/wow.js"></script>
+    </body>
+</html>
+```

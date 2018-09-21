@@ -1,3 +1,59 @@
+/*.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 0; 
+}
+.nav-menu ul li {
+  border-bottom: 0.5px dotted #D4D4D4;
+  transition: 0.2s;
+  min-width: 180px; 
+}
+.nav-menu ul li:last-child {
+  padding: 15px; 
+}
+.nav-menu ul li:hover {
+  background-color: #199EB8; 
+}
+.nav-menu ul li a {
+  color: #000;
+  font-weight: 400; 
+}
+.nav-menu ul li a:hover {
+  color: #fff; 
+}
+.nav-menu ul ul {
+  top: 0;
+  left: 100%; 
+}
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  padding: 15px; 
+}
+.nav-menu li:last-child {
+  padding: 15px 0px 15px 0px; 
+}
+.nav-menu li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 450;
+  transition: 0.5s; 
+}
+.nav-menu li a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.25); 
+}*/
 /*** arrows (for all except IE7) **/
 .sf-arrows .sf-with-ul {
 	padding-right: 2.5em;
@@ -8,14 +64,14 @@
 	content: '';
 	position: absolute;
 	top: 52%;
-    right: 2.2em;
-	margin-top: -3px;
-	height: 0;
-	width: 0;
-	/* order of following 3 rules important for fallbacks to work */
-	border: 5px solid transparent;
-	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
-	border-top-color: rgba(255,255,255,.5);
+  right: 2.2em;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-top-color: rgba(255,255,255,.5);
 }
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
