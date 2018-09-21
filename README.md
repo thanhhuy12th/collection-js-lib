@@ -95,7 +95,16 @@ Using to animate an element. Combine with WOW js to make everything easier. See 
     </head>
     <body>
         <h1 class="wow fadeIn">Amazing text</h1>
+        <script src="lib/jquery/jquery.min.js"></script>
         <script src="lib/animated/wow.js"></script>
+        <script>
+            // Init Wow
+            wow = new WOW({
+                animateClass: 'animated',
+                offset: 100
+            });
+            wow.init();
+        </script>
     </body>
 </html>
 ```
