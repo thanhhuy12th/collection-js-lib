@@ -30,12 +30,15 @@ Using to make smooth scrolling
 Using to create smart menu (navigator). Add mobile style
 ```
 <!-- HTML code -->
-<nav id="nav-menu-container" class="pull-left">
-    <ul class="nav-menu">
-        <li><a href="#aboutUs">about us</a></li>
+<!-- Nav -->
+<nav id="nav-menu-container">
+    <div class="logo pull-left">
+        <a href="#">LOGO</a>
+    </div>
+    <ul class="nav-menu pull-right">
+        <li><a href="#aboutUs">home</a></li>
         <li><a href="#features">features</a></li>
         <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#team">team</a></li>
         <li class="menu-has-children">
             <a href="#">dropdown</a>
             <ul>
@@ -55,8 +58,9 @@ Using to create smart menu (navigator). Add mobile style
                 <li><a href="#">dropdown 6</a></li>
             </ul>
         </li>
-        <li><a href="#contact">contact us</a></li>
+        <li><a href="#contact">contact</a></li>
     </ul>
+    <div class="clearfix"></div>
 </nav>
 <!-- Include script -->
 <script src="lib/fish-menu/js/hoverIntent.js"></script>
