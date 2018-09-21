@@ -30,6 +30,7 @@ Using to make smooth scrolling
 Using to create smart menu (navigator). Add mobile style
 ```
 <!-- HTML code -->
+<!-- Nav  -->
 <nav id="nav-menu-container">
     <div class="logo pull-left">
         <a href="#">LOGO</a>
